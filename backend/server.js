@@ -15,7 +15,7 @@ app.use((req, res, next) => {
   next()
 })
 
-// routes
+// routes 
 app.use('/api/workouts', workoutRoutes)
 
 // connect to db
@@ -30,3 +30,7 @@ mongoose.connect(process.env.MONGO_URI)
   .catch((err) => {
     console.log(err)
   }) 
+
+
+
+  
